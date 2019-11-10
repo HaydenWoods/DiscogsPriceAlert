@@ -1,0 +1,17 @@
+@import "./Utilities/Variables";
+
+.restrict {
+	width: $restrictWidth;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.restrict.fillHeight {
+	height: 100%;
+}
+
+@media only screen and (max-width: calc(#{$restrictWidth} + (#{$mobilePadding} * 2))) {
+	.restrict {
+		width: 100%;
+		padding: 0px $mobilePadding;
+	}
+}	
